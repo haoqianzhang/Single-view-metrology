@@ -1,0 +1,168 @@
+#VRML V2.0 utf8
+
+Collision {
+ collide FALSE
+ children [
+ Shape {
+  appearance Appearance {
+   texture ImageTexture {
+   url "behind.jpg"
+  }  
+  }
+   geometry IndexedFaceSet {
+   coord Coordinate {
+   point [
+      1255.7701     -32.659275      499.44873,
+1277.0551      551.24802      499.44873,
+1277.0551      551.24802              0,
+1255.7701     -32.659275              0
+   ]
+   }
+   coordIndex [
+    0,1,2,3,-1
+   ]
+   texCoord TextureCoordinate {
+    point [
+1  1,
+0  1,
+0  0,
+1  0
+
+    ]
+   }
+   texCoordIndex [
+0,1,2,3,-1
+   ]
+   solid FALSE
+  }
+} Shape {
+  appearance Appearance {
+   texture ImageTexture {
+   url "left.jpg"
+  }  
+  }
+   geometry IndexedFaceSet {
+   coord Coordinate {
+   point [
+        1277.0551      551.24802      499.44873,
+-0.50178848      558.60595      499.44873,
+-0.50178848      558.60595              0,
+  1277.0551      551.24802              0
+   ]
+   }
+   coordIndex [
+    0,1,2,3,-1
+   ]
+   texCoord TextureCoordinate {
+    point [
+0  0,
+1  0,
+1  1,
+0  1
+
+    ]
+   }
+   texCoordIndex [
+0,1,2,3,-1
+   ]
+   solid FALSE
+  }
+} Shape {
+  appearance Appearance {
+   texture ImageTexture {
+   url "right.jpg"
+  }  
+  }
+   geometry IndexedFaceSet {
+   coord Coordinate {
+   point [
+        1255.7701     -32.659275      499.44873,
+-0.46212152      11.791585      499.44873,
+-0.46212152      11.791585              0,
+  1255.7701     -32.659275              0
+   ]
+   }
+   coordIndex [
+    0,1,2,3,-1
+   ]
+   texCoord TextureCoordinate {
+    point [
+1  0,
+1  1,
+0  1,
+0  0
+
+    ]
+   }
+   texCoordIndex [
+0,1,2,3,-1
+   ]
+   solid FALSE
+  }
+} Shape {
+  appearance Appearance {
+   texture ImageTexture {
+   url "top.jpg"
+  }  
+  }
+   geometry IndexedFaceSet {
+   coord Coordinate {
+   point [
+      -0.46212152      11.791585      499.44873,
+  1255.7701     -32.659275      499.44873,
+  1277.0551      551.24802      499.44873,
+-0.50178848      558.60595      499.44873
+   ]
+   }
+   coordIndex [
+    0,1,2,3,-1
+   ]
+   texCoord TextureCoordinate {
+    point [
+0  1,
+0  0,
+1  0,
+1  1
+
+    ]
+   }
+   texCoordIndex [
+0,1,2,3,-1
+   ]
+   solid FALSE
+  }
+} Shape {
+  appearance Appearance {
+   texture ImageTexture {
+   url "botom.jpg"
+  }  
+  }
+   geometry IndexedFaceSet {
+   coord Coordinate {
+   point [
+      -0.46212152      11.791585              0,
+  1255.7701     -32.659275              0,
+  1277.0551      551.24802              0,
+-0.50178848      558.60595              0
+   ]
+   }
+   coordIndex [
+    0,1,2,3,-1
+   ]
+   texCoord TextureCoordinate {
+    point [
+0  1,
+0  0,
+1  0,
+1  1
+
+    ]
+   }
+   texCoordIndex [
+0,1,2,3,-1
+   ]
+   solid FALSE
+  }
+}
+ ] 
+}

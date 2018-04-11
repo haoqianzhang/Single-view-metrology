@@ -1,0 +1,92 @@
+<HTML>
+    <HEAD>
+        <TITLE>Single View Modeling</TITLE>
+    </HEAD>
+    <BODY BGCOLOR="FFFFFF">
+        <HR>
+        
+        <H1 align="center">Project 3 Single View Modeling</H1>
+        <p align="center">ZHANG Haoqian and LUO Han</p>
+        <p align="center"> April 6, 2018</p><br><br>
+        <H2>1 Overview </H2>
+        <p>Through this project, 3D position of a given object could be computed.
+        Also, texture maps and VRML model could be created by the proposed solution.<br><br></p>
+        
+        <H2>2 User interface</H2>
+        <center><IMG SRC="./gui.png" height="500"></center><br>
+        
+        
+        <H2>3 Implementation (use sony box as example)</H2>
+        <ul>
+            <H3>(1) Open original image</H3>
+            Use the folder icon to open an image for computing 3D coordinates. Then, the image
+            will show in the axes.
+            <center><IMG SRC="./gui_1.png" height="500"></center><br>
+            
+            <H3>(2) Compute vanish points of X Y Z axis</H3>
+            Use the three botton in the right (<B>"Lines for X axis" - <font color="red">red line</font>, "Lines for Y axis" - <font color="green">green line</font>, 
+            "Lines for Z axis" - <font color="blue">blue line</font></B>) to draw parallel lines in X, Y, Z directions respectively (at least 3 lines per direction).
+            Use key <B>"q"</B> to quit drawing parallel lines. Then, the proposed algorithm would calculate vanish points for X, Y, Z axis automatically. <br><br>
+            <center><IMG SRC="./gui_2.png" height="500"><br>Original image with parallel lines in X, Y, Z directions</center><br><br>
+            <center><IMG SRC="./vp.png" height="100"><br>Vanish points calculated from above given parallel lines in X, Y, Z directions</center><br><br>
+            Use <B>"Save VP"</B> botton to save the computed vanish points. If user likes to use 
+            existed vanish points, he/she could load vanish points from loacl files by <B>"Load VP"</B> botton.
+            
+            <H3>(3) Select origin and reference poits in X, Y, Z direction</H3>
+            Firstly, click <B>"Select Origin"</B> to choose origin for 3D coordinate system. Then, 
+            click <B>"Xref", "Yref", "Zref"</B> to select reference points in X, Y, Z directions.<br><br>
+            <center><IMG SRC="./gui_3.png" height="500"><br>Draw reference points in X, Y, Z direction and write down those lengths</center><br><br>
+            After that, write down the length between origin and reference points in 
+            corresponding blank rectangle. Finally, click <B>"Calculate P & H"</B>, projection matrix and 
+            homograhpy matrix after scaling would be calculated.<br><br>
+            <center><IMG SRC="./scaling.png" height="300"><br>Scaling factors</center><br><br>
+            <center><IMG SRC="./projection.png" height="100"><br>Projection matrix</center><br><br>
+                
+            <H3>(4) Select base point and reference point</H3>
+            In this step, select base point in x-y plane firsly and then select a reference point with height Zr. Then 
+            the proposed algorthim would ask user <B>"Select othter points that at the same height as reference point? (Y/N) =>"</B> 
+            in Matlab command window. If input <B>"Y"</B>, please select some points at the same height as the reference point.<br><br>
+            <center><IMG SRC="./gui_4.png" height="500"><br>Origin image with base point and reference points ("o" shape)</center><br><br>
+            <H3>(5) Create texture map</H3>
+            Click <B>"X-Y", "Y-Z", "X-Z"</B> to create texture maps in those three planes. 
+            <center><IMG SRC="./box_Txy.bmp" height="400"><br>Texture map in x-y plane</center><br><br>
+            <center><IMG SRC="./box_Tyz.bmp" height="200"><br>Texture map in y-z plane</center><br><br>
+            <center><IMG SRC="./box_Txz.bmp" height="200"><br>Texture map in x-z plane</center><br><br>
+                
+            <H3>(6) Create VRML</H3>
+            After click <B>"Create VRML"</B> botton, the proposed algorithm would ask user to enter a string as the name of 3D model.
+            User need to enter a string without any extention. The final file would be saved in ".wrl" format.
+            Then, do the steps according to dialog box information.
+            <center><IMG SRC="./pos.png" height="100"><br>Vertexes coordinates of sony box</center><br><br>
+            <center><IMG SRC="./coor.png" height="600"><br>Visualize coordinates in 3D dimension</center><br>
+            <center><IMG SRC="./sony_clie.bmp" height="600"><br>Visualize points in origin image (v and p same meaning)</center><br>
+            Then, choosing texture map and the corresponding coodinates to set the configuration of each plane in VRML file.
+            After all texutre images are configured, the VRML file is created in following format when open with Word.<br><br>
+            <center><IMG SRC="./vrml_file.png" height="700"><br>VRML file in Word</center><br>
+            <center><IMG SRC="./box_3d.png" height="300"><br>3D reconstructed object</center><br>
+        </ul>
+        
+        <H2>4 Other examples</H2>
+            <H3>Real scene: HKUST Library Exhibition Desk:</H3>
+            <center><IMG SRC="./exhibition.bmp" height="300">   <IMG SRC="./exhibition_3d.png" height="300"> <br> Reconstruct exhibition desk with length:width:height=1:1:2</center>
+
+            <H3>Painting: Interior of the Santa Maria Maggiore in Rome</H3>
+            <center><IMG SRC="./paint.jpg" height="400"><br> Original image of painting<br><br>
+                <IMG SRC="./paint_3d2.png" height="250">  <IMG SRC="./paint_3d3.png" height="250">  <IMG SRC="./paint_3d4.png" height="250"><br> Different view of 3D model<br><br></center>
+
+
+        <H2>5 Reference</H2>
+        <ul>
+            <li>A. Criminisi, I. Reid and A. Zisserman. "Single View Metrology" <I>ICCV 99 </I>  
+            <a href="https://www.cs.cmu.edu/~ph/869/papers/Criminisi99.pdf">[PDF]</a> </li><br><br>
+        </ul>
+        
+        <H2>6 Email</H2>
+        <ul>
+            <li>ZHANG Haoqian: <I><a href="mailto:haoqian.zhang@connect.ust.hk?cc=hluoaf@connect.ust.hk&subject=Feedback%20of%20Intelligent%20Scissor">haoqian.zhang@connect.ust.hk;</a></I> </li>
+            <li>LUO Han: <I><a href="mailto:hluoaf@connect.ust.hk?cc=haoqian.zhang@connect.ust.hk&subject=Feedback%20of%20Intelligent%20Scissor">hluoaf@connect.ust.hk.</a></I> </li>
+        </ul>
+        
+        <HR>
+    </BODY>
+</HTML>

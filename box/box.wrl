@@ -1,0 +1,104 @@
+#VRML V2.0 utf8
+
+Collision {
+ collide FALSE
+ children [
+ Shape {
+  appearance Appearance {
+   texture ImageTexture {
+   url "Txy.bmp"
+  }  
+  }
+   geometry IndexedFaceSet {
+   coord Coordinate {
+   point [
+      312.1504      18.66532      170.3842,
+9.444036        14.622      170.3842,
+12.36308      416.5527      170.3842,
+302.5258      414.1304      170.3842
+   ]
+   }
+   coordIndex [
+    0,1,2,3,-1
+   ]
+   texCoord TextureCoordinate {
+    point [
+1  0,
+0  0,
+0  1,
+1  1
+
+    ]
+   }
+   texCoordIndex [
+0,1,2,3,-1
+   ]
+   solid FALSE
+  }
+} Shape {
+  appearance Appearance {
+   texture ImageTexture {
+   url "Tyz.bmp"
+  }  
+  }
+   geometry IndexedFaceSet {
+   coord Coordinate {
+   point [
+      9.444036        14.622      170.3842,
+12.36308      416.5527      170.3842,
+12.36308      416.5527             0,
+9.444036        14.622             0
+   ]
+   }
+   coordIndex [
+    0,1,2,3,-1
+   ]
+   texCoord TextureCoordinate {
+    point [
+1  1,
+0  1,
+0  0,
+1  0
+
+    ]
+   }
+   texCoordIndex [
+0,1,2,3,-1
+   ]
+   solid FALSE
+  }
+} Shape {
+  appearance Appearance {
+   texture ImageTexture {
+   url "Txz.bmp"
+  }  
+  }
+   geometry IndexedFaceSet {
+   coord Coordinate {
+   point [
+      312.1504      18.66532      170.3842,
+9.444036        14.622      170.3842,
+9.444036        14.622             0,
+312.1504      18.66532             0
+   ]
+   }
+   coordIndex [
+    0,1,2,3,-1
+   ]
+   texCoord TextureCoordinate {
+    point [
+1  1,
+0  1,
+0  0,
+1  0
+
+    ]
+   }
+   texCoordIndex [
+0,1,2,3,-1
+   ]
+   solid FALSE
+  }
+}
+ ] 
+}

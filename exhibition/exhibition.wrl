@@ -1,0 +1,104 @@
+#VRML V2.0 utf8
+
+Collision {
+ collide FALSE
+ children [
+ Shape {
+  appearance Appearance {
+   texture ImageTexture {
+   url "1.jpg"
+  }  
+  }
+   geometry IndexedFaceSet {
+   coord Coordinate {
+   point [
+       98.15422     -3.050528      205.9101,
+ 115.5553      78.86623      205.9101,
+-14.01937      79.43581      205.9101,
+-15.95163     -9.156666      205.9101
+   ]
+   }
+   coordIndex [
+    0,1,2,3,-1
+   ]
+   texCoord TextureCoordinate {
+    point [
+1  0,
+1  1,
+0  1,
+0  0
+
+    ]
+   }
+   texCoordIndex [
+0,1,2,3,-1
+   ]
+   solid FALSE
+  }
+} Shape {
+  appearance Appearance {
+   texture ImageTexture {
+   url "3.jpg"
+  }  
+  }
+   geometry IndexedFaceSet {
+   coord Coordinate {
+   point [
+       98.15422     -3.050528      205.9101,
+-15.95163     -9.156666      205.9101,
+-15.95163     -9.156666             0,
+ 98.15422     -3.050528             0
+   ]
+   }
+   coordIndex [
+    0,1,2,3,-1
+   ]
+   texCoord TextureCoordinate {
+    point [
+1  1,
+0  1,
+0  0,
+1  0
+
+    ]
+   }
+   texCoordIndex [
+0,1,2,3,-1
+   ]
+   solid FALSE
+  }
+} Shape {
+  appearance Appearance {
+   texture ImageTexture {
+   url "2.jpg"
+  }  
+  }
+   geometry IndexedFaceSet {
+   coord Coordinate {
+   point [
+      -15.95163     -9.156666      205.9101,
+-14.01937      79.43581      205.9101,
+-14.01937      79.43581             0,
+-15.95163     -9.156666             0
+   ]
+   }
+   coordIndex [
+    0,1,2,3,-1
+   ]
+   texCoord TextureCoordinate {
+    point [
+1  1,
+0  1,
+0  0,
+1  0
+
+    ]
+   }
+   texCoordIndex [
+0,1,2,3,-1
+   ]
+   solid FALSE
+  }
+}
+ ] 
+}

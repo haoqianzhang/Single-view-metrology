@@ -1,0 +1,27 @@
+ Shape {
+  appearance Appearance {
+   texture ImageTexture {
+   url "texture_source"
+  }  
+  }
+   geometry IndexedFaceSet {
+   coord Coordinate {
+   point [
+      geometry_coord
+   ]
+   }
+   coordIndex [
+    coord_index
+   ]
+   texCoord TextureCoordinate {
+    point [
+tex_coord
+
+    ]
+   }
+   texCoordIndex [
+tex_index
+   ]
+   solid FALSE
+  }
+}
